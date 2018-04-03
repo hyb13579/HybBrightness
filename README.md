@@ -26,15 +26,16 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-##在二维码页面设置
+
+## 在二维码页面设置
 
 
 #import "QRcodeViewController.h"
 #import "Brightness.h"
 
-@interface QRcodeViewController ()
-@property (nonatomic, readwrite, assign) CGFloat currentLight;
-@end
+ @interface QRcodeViewController ()
+ @property (nonatomic, readwrite, assign) CGFloat currentLight;
+ @end
 
 @implementation QRcodeViewController
 
