@@ -7,6 +7,7 @@
 在 AppDelegate.m 里 #import "Brightness.h"
 在对应位置引用三个方法
 
+```objective-c
 1.
 - (void)applicationWillResignActive:(UIApplication *)application {
     [Brightness OnapplicationWillResignActive];
@@ -25,11 +26,11 @@
     [Brightness OnapplicationWillTerminate];
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
+```
 
 ## 在二维码页面设置
 
-
+```objective-c
 #import "QRcodeViewController.h"
 #import "Brightness.h"
 
@@ -57,3 +58,4 @@
     [Brightness graduallySetBrightness:self.currentLight];
     [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"isQRView"];
 }
+```
