@@ -41,7 +41,6 @@
     [super viewWillDisappear:animated];
     [Brightness graduallySetBrightness:self.currentLight];
     [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"isQRView"];
-    
 }
 /*
 #pragma mark - Navigation
